@@ -11,5 +11,6 @@ def assign_rooms(attendees)
 end
 
 def printer(attendees)
-  attendees.collect { |n| "#{batch_badge_creator(n)} #{assign_rooms(n)}" }
+  batch_badge_creator(attendees)
+  assign_rooms(attendees)
 end
